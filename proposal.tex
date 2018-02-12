@@ -21,6 +21,11 @@ Ashish Kumar\\
 This project aims at bringing the state of the art machine learning usages to the user directly through a web and android app based UI. Today, their are several image processing tools available both on web platform and on android platform but none of them show the current state of the art techniques that have been developed by researchers all around the world. To give a concrete example, the currently available tools will give you the ability to apply filters at an image and similar things, but, the current state of the art can even transfer the style of an image to another image (neural style transfer). The current state of the art techniques can also color a black and white image which was never though to be possible using machine learning a few years before. This has all become possible with the advancements in neural networks. A basic neural network model is shown below.
 \\
 
+\section{Implementation Idea}
+Implementation of this project will require deep knowledge in machine learning and image processing. Mainly the machine learning part of the project will be implemented the python and the an api of this model will be made using flask. The website and android app will be created to link the api to a user interface easily accesible by the user. To provide an overview of the implementation idea: 
+\\
+\\
+A front end user interface will allow the user to select what feature of the web app he wants to use. The front end will be hosted on a server which will be provided access to another server hosting the model api made in flask. Callbacks will be done between the web app and the python model to extract data from user and give it to the model and then give the output back to the server. Since processes like neural style transfer takes a lot of computational expenses, the model may be hosted on a server with GPU access.
 
 \bibliographystyle{abbrv}
 \bibliography{reference} 
